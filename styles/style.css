@@ -56,12 +56,17 @@
 .prevew__title {
    text-transform: uppercase;
    color: #fff;
+   letter-spacing: 25px;
    font-size: 100px;
    padding: 165px 50px 0px 50px;
 }
 
 .prevew__title span {
    display: block;
+}
+
+.prevew__title span:nth-child(1) {
+   margin-left: 100px;
 }
 
 .title-center {
@@ -89,6 +94,15 @@
 .prevew__btn {
    border: 1px solid #fff;
    padding: 12px 32px;
+   font-size: 22px;
+   color: #fff;
+   background: transparent;
+   cursor: pointer;
+}
+
+.prevew__btn:hover {
+   transition: all 0.2s;
+   border: 1px solid rgb(2, 245, 71);
 }
 
 /* ВТОРОЙ БЛОК ================================ */
@@ -101,7 +115,7 @@
 .lots__card {
    display: grid;
    grid-template-columns: repeat(3, 334px);
-   justify-content: center;
+   justify-content: space-around;
 }
 
 .card__one {
@@ -123,12 +137,15 @@
 }
 
 .card__item {
-   margin-right: 30px;
    padding: 40px;
+   height: 563px;
+   width: 334px;
 }
 
 .card__title {
    font-size: 20px;
+   font-weight: 700;
+   line-height: 24px;
    color: #fff;
    text-transform: uppercase;
    text-decoration: underline;
@@ -140,14 +157,18 @@
 }
 
 .card__more {
+   font-size: 22px;
+   cursor: pointer;
    margin-top: 30px;
    margin-left: 46px;
-   margin-bottom: 148px;
+   margin-bottom: 146px;
+   background-color: transparent;
+   border: 0;
+
    text-decoration: underline;
 }
 
 /* ТРЕТИЙ БЛОК ================================= */
-.auction {}
 
 .auction__title {
    display: flex;
@@ -157,16 +178,25 @@
 }
 
 .auction__logo {
-   padding: 50px;
+   text-align: center;
+   width: 240px;
+   height: 240px;
+   background-color: #000;
+   border-radius: 50%;
+   margin-top: 35px;
    background: #000;
    margin-left: 71px;
-   border-radius: 50%;
-   width: 240px;
-   height: 210px;
+}
+
+.auction__logo img {
+   width: 148px;
+   height: 114px;
+   margin-top: 65px;
 }
 
 .auction__text {
-   padding-top: 133px;
+   line-height: 24px;
+   padding-top: 100px;
    flex: 0 1 66.666%;
 }
 
@@ -194,19 +224,30 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-}
-
-.footer {
    padding-top: 181px;
    padding-bottom: 121px;
    padding-left: 50px;
    padding-right: 50px;
 }
 
+
 .menu__item-footer {
    list-style: none;
    text-decoration: none;
 }
+
+.contacts-footer {
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+}
+
+
+.menu__item-footer-clean:nth-child(1) a {
+   list-style: none;
+   text-decoration: none;
+}
+
 
 .menu__list-footer {
    text-align: center;

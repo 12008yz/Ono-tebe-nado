@@ -319,7 +319,7 @@
    left: 3px;
    line-height: 24px;
    font-weight: 400;
-
+   letter-spacing: 50%;
 }
 
 .auction__subtitle p {

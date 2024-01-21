@@ -15,6 +15,10 @@
    list-style-type: circle;
 }
 
+.menu__link {
+   text-underline-offset: 4px;
+}
+
 .menu__item {
    margin-right: 32px;
 }
@@ -329,6 +333,10 @@
    padding-left: 60px;
    line-height: 21.3px;
    font-size: 18px;
+}
+
+.menu__item-footer-clean a {
+   text-decoration: none;
 }
 
 .menu__list-footer ul {
